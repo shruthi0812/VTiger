@@ -1,0 +1,44 @@
+package practicepackage;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import genericUtility.PropertiesUtility;
+import genericUtility.SeleniumUtility;
+
+public class POMPractice {
+	@FindBy(name="user_name")
+	WebElement usernameTF;
+	public POMPractice(WebDriver driver)
+	{
+		PageFactory.initElements( driver,this);
+	}
+	public static void main(String[] args) throws IOException, InterruptedException {
+		
+		SeleniumUtility sutil=new SeleniumUtility();
+		PropertiesUtility putil=new PropertiesUtility();
+		WebDriver driver=new ChromeDriver();
+		sutil.maximizeWindow(driver);
+		sutil.implictwait(driver, 15);
+		String URL=putil.getDataFromProperties("url");
+		sutil.accessApplication(driver,URL);
+		String UN=putil.getDataFromProperties("username");
+		String PWD=putil.getDataFromProperties("password");
+	//WebElement usernameTf=driver.findElement(By.name("user_name"));
+	//usernameTf.sendKeys(UN);
+		POMPractice p=new POMPractice(driver);
+		p.usernameTF.sendKeys(UN);
+		Thread.sleep(2000);
+		sutil.refershWepage(driver);
+		Thread.sleep(2000);
+		p.usernameTF.sendKeys(UN);
+	}
+}
+
+

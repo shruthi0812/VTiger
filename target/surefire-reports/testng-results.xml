@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-01T10:13:40 IST" name="Surefire suite" finished-at="2026-10-01T10:13:40 IST" duration-ms="285">
+    <groups>
+    </groups>
+    <test started-at="2026-10-01T10:13:40 IST" name="Surefire test" finished-at="2026-10-01T10:13:40 IST" duration-ms="285">
+      <class name="practicepackage.TestNGPractice">
+        <test-method signature="riyaChats()[pri:0, instance:practicepackage.TestNGPractice@1ed1993a]" started-at="2026-10-01T10:13:40 IST" name="riyaChats" finished-at="2026-10-01T10:13:40 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- riyaChats -->
+        <test-method signature="riyaEats()[pri:0, instance:practicepackage.TestNGPractice@1ed1993a]" started-at="2026-10-01T10:13:40 IST" name="riyaEats" finished-at="2026-10-01T10:13:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- riyaEats -->
+        <test-method signature="riyaSleeps()[pri:0, instance:practicepackage.TestNGPractice@1ed1993a]" started-at="2026-10-01T10:13:40 IST" name="riyaSleeps" finished-at="2026-10-01T10:13:40 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- riyaSleeps -->
+        <test-method signature="riyaWakes()[pri:0, instance:practicepackage.TestNGPractice@1ed1993a]" started-at="2026-10-01T10:13:40 IST" name="riyaWakes" finished-at="2026-10-01T10:13:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- riyaWakes -->
+      </class> <!-- practicepackage.TestNGPractice -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
